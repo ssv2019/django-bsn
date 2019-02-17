@@ -20,6 +20,6 @@ Django-based web app for billiard social network
 5) Open `localhost:80/static/html/index.html` - there should be blog main page
 
 ## TODO:
-[x] Initial files set for git repo
-[] Add collectstatic to precommit hook
-[] Add makemigrations for all aps to precommit hook (only if new migration is needed!)
+- [x] Initial files set for git repo
+- [ ] Add collectstatic to precommit hook
+- [ ] Add makemigrations for all aps to precommit hook (only if new migration is needed!)
