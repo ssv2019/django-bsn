@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- html -->
+<html>
+<head lang="ru">
+<!-- meta info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Bootstrap -->
+    <link href="../vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+<!-- My styles -->
+    <link href="../css/main_style.css" rel="stylesheet">
+<!-- <script src="../js/scripts.js"></script> -->
+    <title>Главная</title>
+</head>
+<body>
+<!-- body -->
+<!-- navbar -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="hidden-xs hidden-sm col-md-3 col-lg-3"></div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <nav class="navbar navbar-static-top vzNavbar">
+    <div class="container-fluid">
+        <!--navbar header -->
+        <div class="navbar-header vzNavbarHeader">
+            <a class="navbar-brand vzNavbarBrand" href="#">Главная</a>
+        </div> <!-- navbar header -->
+        <!-- navbar collapse -->
+        <div class="navbar-collapse collapse vzNavbarCollapse">
+            <!-- right part -->
+            <ul class="nav navbar-nav navbar-right vzNavbarRightButtons">
+                <li class="dropdown vzNavbarSearch">
+                    <a href="#" data-target="#" class="dropdown-toggle" data-target="#" data-toggle="dropdown"><i class="glyphicon glyphicon-search vzNavbarSearchIcon"></i></a>
+                    <ul class="dropdown-menu dropdown-navbar">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <label class="sr-only" for="vzNavbarSearchInput">Search</label>
+                                <input type="text" class="form-control pull-left"  id="vzNavbarSearchInput" placeholder="Поиск">
+                            </div>
+                            <button type="submit" class="btn btn-flat pull-right vzNavbarSearchButton"><i class="glyphicon glyphicon-search vzNavbarSearchButtonIcon"></i></button>
+                        </form>
+                    </ul>
+                </li>
+                <li class="dropdown vzNavbarUserButton">
+                    <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-user vzNavbarUserButtonIcon1"></i>
+                        <i class="glyphicon glyphicon-chevron-down vzNavbarUserButtonIcon2"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-toggle="modal" data-target="#vzLoginModal">Войти</a></li>
+                        <li><a href="registration.html">Зарегистироваться</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </li>
+                   </ul> <!-- /right part -->
+               </div> <!-- navbar collapse -->
+           </div>
+        </nav>
+        </div>
+        <div class="hidden-xs hidden-sm col-md-3 col-lg-3"></div>
+    </div>
+</div>
+ <!-- /navbar -->
+
+<!-- header -->
+<header class="vzHeader" id="vzIndexHeader">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Меню</h1>
+            </div>
+        </div>
+    </div>
+</header> <!-- header -->
+
+<!-- main body -->
+<div class="container-fluid">
+            <div class="row">
+                <!-- left side column -->
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="panel panel-default" id="vzSidebar">
+                        <div class="panel-body">
+                            <ul class="nav nav-stacked">
+                                <li><a href="index.html">Главная</a></li>
+                                <hr>
+                                <li><a href="profile.html">Профиль</a></li>
+                                <hr>
+                                <li><a href="registration.html">Регистрация</a></li>
+                            </ul>
+                            <hr>
+                        </div><!-- /panel body -->
+                    </div><!-- /panel -->
+                </div><!-- /left side column -->
+
+                <!--mid column-->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="vzIndexMidColumn">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Основное</div>
+                        <div class="panel-body">
+                            <div class="container-fluid">
+                                <div class="well">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h1>Основной текст</h1>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div><!-- /panel -->
+                </div><!-- /mid column -->
+
+                <!-- right content column-->
+                <div class="hidden-xs hidden-sm col-md-3 col-lg-3" id="vzIndexRightColumn">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Боковой текст</div>
+                            <div class="panel-body">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div> <!-- /main body -->
+
+<!-- modal window for login -->
+<div class="modal fade" id="vzLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="vzModalLoginTitle">Вход</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="vzModalLoginInputEmail" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="vzModalLoginInputEmail" placeholder="Введите Ваш email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="vzModalLoginInputPassword" class="col-sm-2 control-label">Пароль</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="vzModalLoginInputPassword" placeholder="Введите Ваш пароль" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Запомнить меня
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary button-flat vzButtonGeneral">Войти</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div> <!-- /modal window for login -->
+
+<!-- footer -->
+<footer class="vzFooter">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right">
+                <h5>©SeR 2015</h5>
+            </div>
+        </div>
+    </div>
+</footer> <!-- /footer -->
+
+</body> <!-- /body -->
+</html> <!-- /html -->
