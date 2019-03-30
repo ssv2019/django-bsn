@@ -2,32 +2,19 @@
 <!-- html -->
 <html>
 <head lang="ru">
-    <!-- meta info -->
+<!-- meta info -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
     <link href="../vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-    <!-- My styles -->
+<!-- My styles -->
     <link href="../css/main_style.css" rel="stylesheet">
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../vendors/jQuery/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../vendors/bootstrap/js/bootstrap.js"></script>
-    <!-- My scripts -->
-    <!-- <script src="../js/scripts.js"></script> -->
-    <title>Взале</title>
+<!-- <script src="../js/scripts.js"></script> -->
+    <title>Профиль</title>
 </head>
 <body>
 <!-- body -->
@@ -40,16 +27,10 @@
     <div class="container-fluid">
         <!--navbar header -->
         <div class="navbar-header vzNavbarHeader">
-            <a class="navbar-brand vzNavbarBrand" href="#">Взале</a>
+            <a class="navbar-brand vzNavbarBrand" href="#">Профиль</a>
         </div> <!-- navbar header -->
         <!-- navbar collapse -->
         <div class="navbar-collapse collapse vzNavbarCollapse">
-            <!-- left part -->
-            <ul class="nav navbar-nav vzNavbarLeftButtons">
-                <li>
-                    <a href="tutorials.html" data-target="#" class="vzNavbarTutorialsButton">Туториалы</a>
-                </li>
-            </ul> <!-- /left part -->
             <!-- right part -->
             <ul class="nav navbar-nav navbar-right vzNavbarRightButtons">
                 <li class="dropdown vzNavbarSearch">
@@ -58,7 +39,7 @@
                         <form class="form-inline" role="form">
                             <div class="form-group">
                                 <label class="sr-only" for="vzNavbarSearchInput">Search</label>
-                                <input type="text" class="form-control pull-left"  id="vzNavbarSearchInput" placeholder="Поиск в зале">
+                                <input type="text" class="form-control pull-left"  id="vzNavbarSearchInput" placeholder="Поиск">
                             </div>
                             <button type="submit" class="btn btn-flat pull-right vzNavbarSearchButton"><i class="glyphicon glyphicon-search vzNavbarSearchButtonIcon"></i></button>
                         </form>
@@ -91,8 +72,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 title="Сеть для спорта. В разработке.">Взале
-                    <p class="lead">Спортивный блог - spiral 1</p></h1>
+                <h1>Меню</h1>
             </div>
         </div>
     </div>
@@ -108,25 +88,9 @@
                             <ul class="nav nav-stacked">
                                 <li><a href="index.html">Главная</a></li>
                                 <hr>
-                                <li><a href="map.html">Карта</a></li>
+                                <li><a href="registration.html">Регистрация</a></li>
                             </ul>
                             <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <a href="http://www.vk.com" target="_blank" target="_blank"><i class="icon-2x icon-vk"></i></a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="http://www.facebook.com" target="_blank"><i class="icon-2x icon-facebook" target="_blank"></i></a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="http://www.twitter.com" target="_blank"><i class="icon-2x icon-twitter"></i></a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="https://www.linkedin.com/" target="_blank"><i class="icon-2x icon-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
                         </div><!-- /panel body -->
                     </div><!-- /panel -->
                 </div><!-- /left side column -->
@@ -137,14 +101,13 @@
                         <div class="panel-heading">Профиль</div>
                         <div class="panel-body">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
-                                <li><a href="#profile" data-toggle="tab">Профиль</a></li>
+                                <li class="active"><a href="#profile" data-toggle="tab">Профиль</a></li>
                                 <li><a href="#settings" data-toggle="tab">Настройки</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="home">
                                     <div class="panel panel-default" id="vzUserProfileMainPanel">
-                                        <div class="panel-heading">Страница пользователя</div>
+                                        <div class="panel-heading">Информация</div>
                                         <div class="panel-body">
                                             <div class="container-fluid">
                                                 <div class="row">
@@ -152,24 +115,16 @@
                                                         <div class="table-responsive">
                                                             <table class="table table-hover">
                                                             <tr>
-                                                                <td>#</td>
-                                                                <td>Видео</td>
-                                                                <td>Название</td>
-                                                                <td>Категория</td>
-                                                                <td>Просмотров</td>
-                                                                <td>Рейтинг</td>
+                                                                <td>Имя</td>
+                                                                <td>Ник</td>
+                                                                <td>Пол</td>
+                                                                <td>Дата рождения</td>
                                                             </tr>
                                                             <tr>
-                                                                <td>1</td>
-                                                                <td>
-                                                                    <a href="http://www.youtube.com/watch?v=-zWfNDWpsq0">
-                                                                        Illinois Gymnastics Strength Circuit
-                                                                    </a>
-                                                                </td>
-                                                                <td>Illinois Gymnastics Strength Circuit</td>
-                                                                <td>Спортивная гимнастика</td>
-                                                                <td>4 211</td>
-                                                                <td>1</td>
+                                                                <td>Сергей</td>
+                                                                <td>SeR</td>
+                                                                <td>Гимнаст</td>
+                                                                <td>10.10</td>
                                                             </tr>
                                                         </table>
                                                         </div>

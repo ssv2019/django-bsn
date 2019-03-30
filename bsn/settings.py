@@ -37,10 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
 ]
 
-AUTH_USER_MODEL = 'blog.User'
+#AUTH_USER_MODEL = 'blog.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -80,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'bsndb',
-        'USER': 'bsn',
-        'PASSWORD': 'psql32db47',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -124,7 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_ROOT = '/home/ser/dev/web/bsn/bsn/static/'
+STATIC_ROOT = '/Users/stepa/djangofolder/static/'
 STATIC_URL = '/static/'
-MEDIA_ROOT = '/home/ser/dev/web/bsn/bsn/media/'
-MEDIA_URL = '/media/'
+#MEDIA_ROOT = '/home/ser/dev/web/bsn/bsn/media/'
+#MEDIA_URL = '/media/'

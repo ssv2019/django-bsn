@@ -2,7 +2,7 @@
 # need to be have symlink in /etc/nginx/sites-enabled
 server {
 	server_name localhost;
-	root <path-to-django-project-root>;
+	root /Users/stepa/djangofolder/django-bsn-master;
 	location / {
       	try_files $uri @proxy_to_app;
     	}
