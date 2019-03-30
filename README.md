@@ -17,7 +17,7 @@ Django-based web app for billiard social network
 	```
 	gunicorn bsn.wsgi
 	```
-5) Open `localhost:80/static/html/index.html` - there should be blog main page
+5) Open `localhost:8999/static/html/index.html` - there should be blog main page
 
 ## TODO:
 - [x] Initial files set for git repo

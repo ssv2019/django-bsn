@@ -2,32 +2,19 @@
 <!-- html -->
 <html>
 <head lang="ru">
-    <!-- meta info -->
+<!-- meta info -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-    <!-- Bootstrap -->
+<!-- Bootstrap -->
     <link href="../vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-    <!-- My styles -->
+<!-- My styles -->
     <link href="../css/main_style.css" rel="stylesheet">
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../vendors/jQuery/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../vendors/bootstrap/js/bootstrap.js"></script>
-    <!-- My scripts -->
-    <!-- <script src="../js/scripts.js"></script> -->
-    <title>Взале</title>
+<!-- <script src="../js/scripts.js"></script> -->
+    <title>Главная</title>
 </head>
 <body>
 <!-- body -->
@@ -40,16 +27,10 @@
     <div class="container-fluid">
         <!--navbar header -->
         <div class="navbar-header vzNavbarHeader">
-            <a class="navbar-brand vzNavbarBrand" href="#">Взале</a>
+            <a class="navbar-brand vzNavbarBrand" href="#">Главная</a>
         </div> <!-- navbar header -->
         <!-- navbar collapse -->
         <div class="navbar-collapse collapse vzNavbarCollapse">
-            <!-- left part -->
-            <ul class="nav navbar-nav vzNavbarLeftButtons">
-                <li>
-                    <a href="tutorials.html" data-target="#" class="vzNavbarTutorialsButton">Туториалы</a>
-                </li>
-            </ul> <!-- /left part -->
             <!-- right part -->
             <ul class="nav navbar-nav navbar-right vzNavbarRightButtons">
                 <li class="dropdown vzNavbarSearch">
@@ -58,7 +39,7 @@
                         <form class="form-inline" role="form">
                             <div class="form-group">
                                 <label class="sr-only" for="vzNavbarSearchInput">Search</label>
-                                <input type="text" class="form-control pull-left"  id="vzNavbarSearchInput" placeholder="Поиск в зале">
+                                <input type="text" class="form-control pull-left"  id="vzNavbarSearchInput" placeholder="Поиск">
                             </div>
                             <button type="submit" class="btn btn-flat pull-right vzNavbarSearchButton"><i class="glyphicon glyphicon-search vzNavbarSearchButtonIcon"></i></button>
                         </form>
@@ -91,8 +72,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h1 title="Сеть для спорта. В разработке.">Взале
-                    <p class="lead">Спортивный блог - spiral 1</p></h1>
+                <h1>Меню</h1>
             </div>
         </div>
     </div>
@@ -108,25 +88,11 @@
                             <ul class="nav nav-stacked">
                                 <li><a href="index.html">Главная</a></li>
                                 <hr>
-                                <li><a href="map.html">Карта</a></li>
+                                <li><a href="profile.html">Профиль</a></li>
+                                <hr>
+                                <li><a href="registration.html">Регистрация</a></li>
                             </ul>
                             <hr>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <a href="http://www.vk.com" target="_blank" target="_blank"><i class="icon-2x icon-vk"></i></a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="http://www.facebook.com" target="_blank"><i class="icon-2x icon-facebook" target="_blank"></i></a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="http://www.twitter.com" target="_blank"><i class="icon-2x icon-twitter"></i></a>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <a href="https://www.linkedin.com/" target="_blank"><i class="icon-2x icon-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
                         </div><!-- /panel body -->
                     </div><!-- /panel -->
                 </div><!-- /left side column -->
@@ -134,47 +100,16 @@
                 <!--mid column-->
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="vzIndexMidColumn">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Свежее</div>
+                        <div class="panel-heading">Основное</div>
                         <div class="panel-body">
                             <div class="container-fluid">
                                 <div class="well">
                                     <div class="row">
                                         <div class="col-12">
-                                            <a href="#"><h1>Ролики с Youtube</h1></a>
+                                            <h1>Основной текст</h1>
                                         </div>
                                     </div>
                                     <hr>
-                                    <div class="row">
-                                        <div class="col-6 text-left">
-                                            категории, хэштеги
-                                        </div>
-                                        <div class="col-6 text-right">
-                                            ключевые слова, метки
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <img src="../images/alarm.jpg" class="img-responsive">
-                                            <h3><a href="http://www.youtube.ru" target="_blank">Youtube</a></h3>
-                                            <p>
-                                                YouTube — видеохостинг, предоставляющий пользователям услуги хранения, доставки и показа видео.
-                                                Пользователи могут добавлять, просматривать, комментировать и делиться с друзьями теми или иными видеозаписями.
-                                            </p>
-                                            <p><a href="http://www.youtube.ru" target="_blank">Обучалки и курсы будут браться отсюда, конечно же.</a></p>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-12 text-right">
-                                            Не нравится 10 | Нравится 100
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-12 text-right">
-                                            <a href="topic.html" class="btn btn-default  button-flat vzButtonGeneral">Читать дальше</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <hr>
@@ -185,38 +120,8 @@
                 <!-- right content column-->
                 <div class="hidden-xs hidden-sm col-md-3 col-lg-3" id="vzIndexRightColumn">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Самое популярное</div>
+                            <div class="panel-heading">Боковой текст</div>
                             <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <h2>Здоровый образ жизни</h2>
-                                        Представители философско-социологического направления рассматривают
-                                        здоровый образ жизни как глобальную социальную проблему, составную
-                                        часть жизни общества в целом, хотя само понятие «здорового образа жизни»
-                                        однозначно пока ещё не определено. По оценкам специалистов, здоровье людей
-                                        зависит на 50–55 % именно от образа жизни, на 20 % — от окружающей среды, на
-                                        18–20 % — от генетической предрасположенности, и лишь на 8–10 % — от здравоохранения.
-                                        <br><br>
-                                        <a href="topic.html" class="btn btn-default  button-flat vzButtonGeneral">Подробнее...</a>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <img src="../images/alarm.jpg" class="img-responsive">
-                                        <img src="../images/alarm.jpg" class="img-responsive">
-                                        <img src="../images/alarm.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-md-7">
-                                        <h2>The Year of Responsive Design.</h2>
-                                        2013 was marked as the year of Responsive Web Design (RWD). The Web is filled with big brands, galleries and magical examples that media queries demonstrate the glory of responsive design.
-                                        <br><br>
-                                        <a href="topic.html" class="btn btn-default  button-flat vzButtonGeneral">Подробнее...</a>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <img src="../images/alarm.jpg" class="img-responsive">
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
